@@ -10,14 +10,16 @@ if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
 
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$whatsapp = $_POST['whatsapp'];
+$conn->set_charset("utf8mb4");
 
-$sql = "INSERT INTO inscripciones (nombre, email, whatsapp)
-        VALUES ('$nombre', '$email', '$whatsapp')";
+$nombre = trim($_POST['nombre'] ?? '');
+$email = trim($_POST['email'] ?? '');
+$whatsapp = trim($_POST['whatsapp'] ?? '');
 
-if ($conn->query($sql) === TRUE) {
+$stmt = $conn->prepare("INSERT INTO inscripciones (nombre, email, whatsapp) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $nombre, $email, $whatsapp);
+
+if ($stmt->execute()) {
     echo "<script>
             alert('Registro guardado correctamente');
             window.location.href='index.html';
@@ -29,5 +31,6 @@ if ($conn->query($sql) === TRUE) {
           </script>";
 }
 
+$stmt->close();
 $conn->close();
 ?>

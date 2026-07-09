@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mashka Box</title>
-    <link rel="stylesheet" href="css/styles.css?v=10">
+    <link rel="stylesheet" href="css/styles.css?v=11">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header>
 <nav>
-    <a href="index.html" class="logo-link">
-    <img src="images/logo.png" alt="Logo" class="logo">
-</a>
+    <a href="index.html" class="logo-link" aria-label="Ir al inicio">
+        <img src="images/logo.png" alt="Mashka Box Training Club" class="logo">
+    </a>
+
     <input type="checkbox" id="menu-check">
 
-    <label for="menu-check" class="menu-toggle">
+    <label for="menu-check" class="menu-toggle" aria-label="Abrir menú">
         ☰
     </label>
+
     <div class="nav-links">
         <a href="#inicio">Inicio</a>
         <a href="#beneficios">Beneficios</a>
@@ -31,8 +33,7 @@
 
 <!-- HERO -->
 <section id="inicio" class="hero">
-    
-    <img src="images/banner.png" alt="Gym" class="hero-img">
+    <img src="images/banner1.png" alt="Mashka Box Training Club" class="hero-img">
 </section>
 
 <div class="banner">
@@ -40,19 +41,18 @@
 </div>
 
 <section class="carousel">
-
    <div class="carousel-track">
-    <img src="images/img1.jpeg">
-    <img src="images/img2.jpeg">
-    <img src="images/img3.jpeg">
-    <img src="images/img4.jpeg">
+        <img src="images/img1.jpeg" alt="Entrenamiento en Mashka Box">
+        <img src="images/img2.jpeg" alt="Clase grupal en Mashka Box">
+        <img src="images/img3.jpeg" alt="Rutina funcional en Mashka Box">
+        <img src="images/img4.jpeg" alt="Comunidad Mashka Box">
 
-    <!-- imagenes duplicadas -->
-    <img src="images/img1.jpeg">
-    <img src="images/img2.jpeg">
-    <img src="images/img3.jpeg">
-    <img src="images/img4.jpeg">
-</div>
+        <!-- Imágenes duplicadas para el carrusel infinito -->
+        <img src="images/img1.jpeg" alt="">
+        <img src="images/img2.jpeg" alt="">
+        <img src="images/img3.jpeg" alt="">
+        <img src="images/img4.jpeg" alt="">
+    </div>
 </section>
 
 <!-- BIENVENIDA -->
@@ -60,8 +60,6 @@
     <h2>BIENVENIDO A MASHKA BOX</h2>
     <p>
         En Mashka Box Training Club te ayudamos a alcanzar tus objetivos físicos y mentales con entrenamientos funcionales y acondicionamiento físico.
-    </p>
-    <p>
         Contamos con entrenadores capacitados, horarios flexibles y un ambiente motivador para que cada día superes tus límites.
     </p>
 </section>
@@ -99,15 +97,12 @@
 
 <!-- VIDEO -->
 <section class="video-section">
-
-    <div class="video-overlay"></div>
-
-    <div class="video-box">
-        <video class="video-gym" autoplay muted loop playsinline>
-            <source src="videos/gym-training.mp4" type="video/mp4">
-        </video>
+    <div class="video-grid">
+        <img src="images/foto1.jpg" alt="Inauguración de Mashka Box">
+        <img src="images/foto2.jpg" alt="Entrenamiento en Mashka Box">
+        <img src="images/foto3.jpg" alt="Comunidad de Mashka Box">
+        <img src="images/foto4.jpg" alt="Clase en Mashka Box">
     </div>
-
 </section>
 
 <div class="map-title-container">
@@ -117,11 +112,11 @@
 </div>
 
 <section class="map-section">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2753352871086!2d-78.61389142689076!3d-0.9452788353446213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1ses!2sec!4v1777386847838!5m2!1ses!2sec" 
-width="800" 
-height="600" 
-style="border:0;" 
-allowfullscreen="" 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2753352871086!2d-78.61389142689076!3d-0.9452788353446213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d461636565889b%3A0x390a2c8fd01dcfa2!2sMashka%20Box%20Training%20Club!5e0!3m2!1ses!2sec!4v1777386847838!5m2!1ses!2sec"
+width="800"
+height="600"
+style="border:0;"
+allowfullscreen=""
 loading="lazy"
 referrerpolicy="no-referrer-when-downgrade">
 </iframe>
@@ -149,7 +144,6 @@ referrerpolicy="no-referrer-when-downgrade">
             <h2>PLAN MENSUAL</h2>
             <h1>$35</h1>
             <p>Intenta un mes</p>
-
         </div>
         <div class="plan">
             <h2>PLAN TRIMESTRAL</h2>
@@ -164,54 +158,16 @@ referrerpolicy="no-referrer-when-downgrade">
     </div>
 </section>
 
-<!-- TABLA COMPARATIVA -->
-<section class="table-section">
-    <div class="section-title">COMPARA NUESTROS PLANES</div>
-
-    <table>
-        <tr>
-            <th>Plan</th>
-            <th>Precio</th>
-            <th>Beneficio</th>
-        </tr>
-        <tr>
-            <td>Grupal</td>
-            <td>$30</td>
-            <td>Desde 3 personas</td>
-        </tr>
-        <tr>
-            <td>Mensual</td>
-            <td>$35</td>
-            <td>Acceso completo</td>
-        </tr>
-        <tr>
-            <td>Trimestral</td>
-            <td>$95</td>
-            <td>Ahorro especial</td>
-        </tr>
-        <tr>
-            <td>Semestral</td>
-            <td>$180</td>
-            <td>Máximo ahorro</td>
-        </tr>
-    </table>
-</section>
-
 <!-- FORMULARIO -->
 <section class="form-section">
     <div class="section-title">INSCRÍBETE YA</div>
 
-<form class="formulario" action="guardar.php" method="POST">
-
-    <input type="text" name="nombre" placeholder="Nombre completo" required>
-
-    <input type="email" name="email" placeholder="Correo electrónico" required>
-
-    <input type="tel" name="whatsapp" placeholder="Contacto de Whatsapp">
-
-    <button type="submit">ENVIAR</button>
-
-</form>
+    <form class="formulario" action="guardar.php" method="POST">
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <input type="tel" name="whatsapp" placeholder="Contacto de Whatsapp">
+        <button type="submit">ENVIAR</button>
+    </form>
 </section>
 
 <!-- CONTACTOS -->
@@ -219,36 +175,33 @@ referrerpolicy="no-referrer-when-downgrade">
 <div class="contact-container">
     <div class="contact-info">
         <h2>CONTÁCTANOS</h2>
-        <p>
-            <a href="https://wa.me/593983421877" target="_blank">
-                <img src="images/icons/whatsapp.png" width="30">
+        <div class="contact-grid">
+            <a class="contact-item" href="https://wa.me/593983421877" target="_blank" rel="noopener">
+                <img src="images/icons/whatsapp.png" width="30" alt="WhatsApp">
+                <span>0983421877</span>
             </a>
-            <a href="https://wa.me/593983421877" target="_blank">
-                0983421877
+            <a class="contact-item" href="https://facebook.com/mashkabox" target="_blank" rel="noopener">
+                <img src="images/icons/facebook.png" width="30" alt="Facebook">
+                <span>@mashkabox</span>
             </a>
-        </p>
-                <p>
-            <a href="https://facebook.com/mashkabox" target="_blank">
-                <img src="images/icons/facebook.png" width="30">
+            <a class="contact-item" href="https://instagram.com/mashkabox" target="_blank" rel="noopener">
+                <img src="images/icons/instagram.png" width="30" alt="Instagram">
+                <span>@mashkabox</span>
             </a>
-
-            <a href="https://facebook.com/mashkabox" target="_blank">
-                @mashkabox
-            </a>
-        </p>
-        <p>
-            <a href="https://instagram.com/mashkabox" target="_blank">
-                <img src="images/icons/instagram.png" width="30">
-            </a>
-            <a href="https://instagram.com/mashkabox" target="_blank">
-                @mashkabox
-            </a>
-        </p>
+        </div>
     </div>
 </div>
     <div class="copyright">
         © 2026 Mashka Box - Todos los derechos reservados
     </div>
 </footer>
-</body>
 
+<script>
+    document.querySelectorAll('.nav-links a').forEach((link) => {
+        link.addEventListener('click', () => {
+            document.getElementById('menu-check').checked = false;
+        });
+    });
+</script>
+</body>
+</html>
